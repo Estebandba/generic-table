@@ -1,0 +1,72 @@
+:root {
+  --headerColor: rgb(0, 180, 219);
+  --tableColor: whitesmoke;
+  --borderRowColor: lightgrey;
+}
+
+.table-container {
+  display: block;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  overflow: scroll;
+  -webkit-box-shadow: 0px 2px 24px 6px rgba(215, 217, 222, 1);
+  -moz-box-shadow: 0px 2px 24px 6px rgba(215, 217, 222, 1);
+  box-shadow: 0px 2px 24px 6px rgba(215, 217, 222, 1);
+  border-radius: 5px;
+}
+
+.table-main {
+  width: 100%;
+  border: 1px solid var(--borderRowColor);
+  border-radius: 5px;
+  background-color: var(--tableColor);
+}
+
+td {
+  border-radius: 5px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-title {
+  border-radius: 3px 3px 0px 0px;
+  border: 5px solid var(--headerColor);
+  background-color: var(--headerColor);
+  color: var(--tableColor);
+}
+
+.stickyHeader {
+  border-radius: 3px 3px 0px 0px;
+  border: 5px solid var(--headerColor);
+
+  position: sticky;
+  top: 0;
+  background-color: var(--headerColor);
+  padding: 0;
+  color: var(--tableColor);
+  cursor: pointer;
+}
+
+table tbody tr {
+  outline: 1px solid var(--borderRowColor);
+}
+
+.resizer {
+  width: auto;
+  border-left: 5px;
+  position: sticky;
+  top: 0;
+  background-color: var(--tableColor);
+  padding: 0;
+}
+
+.arrow {
+  font-size: 80%;
+}
+#observe {
+  height: 1px;
+  margin: 1px;
+}
